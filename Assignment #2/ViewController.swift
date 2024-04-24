@@ -30,6 +30,11 @@ class ViewController: UIViewController {
                     return
                 }
         
+        if size < 1 {
+                    hiddenView.text = "Please enter a number above 1"
+                    return
+        }
+        
         var diamondPoints = [
             CGPoint(x: size / 2, y: 0),
             CGPoint(x: size, y: size / 2),
